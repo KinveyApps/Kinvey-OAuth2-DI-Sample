@@ -1,0 +1,4 @@
+create table locs
+on select get from 'https://api.instagram.com/v1/locations/search?lat={^lat}&lng={^long}&access_token={^oauth_token}
+'
+resultset 'data' select * from locs

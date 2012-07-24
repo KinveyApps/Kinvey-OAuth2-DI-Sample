@@ -1,0 +1,4 @@
+create table media
+on select get from 'https://api.instagram.com/v1/locations/{^location_id}/media/recent?access_token={^oauth_token}'
+
+resultset 'data' select * from media
