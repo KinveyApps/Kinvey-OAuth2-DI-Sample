@@ -13,7 +13,7 @@ This sample application requires a minimum of iOS 5.0 and KinveyKit 1.6.0. To us
 This project uses Google's [gtm-oauth2](http://code.google.com/p/gtm-oauth2/) library to obtain an acess token from Instagram. It's your responsiblity to log in to [Instragram's API](http://instagram.com/developer/), create an application with them and obtain the client id and secret. 
 
 ### Data Integration
-There are two ql.io collections used by the is sample app
+There are two ql.io collections used by this sample app
 * `instagram-locations` : provides a list of Instagram locations near a given latitude & longitude 
 * `instagram-imagesAtLoc` : provides a list of recent images at a given Instagram location
 
