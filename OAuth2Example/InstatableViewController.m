@@ -50,8 +50,8 @@
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
-    KCSEntityDict* thisItem = [array objectAtIndex:indexPath.row];
-    NSDictionary* captionDict = [thisItem getValueForProperty:@"caption"];
+    NSMutableDictionary* thisItem = [array objectAtIndex:indexPath.row];
+    NSDictionary* captionDict = [thisItem valueForKey:@"caption"];
     if ([captionDict isEqual:[NSNull null]] == NO) {
         //unfortunately this protection is necessary as Instagram can provide empty captions
         NSString* caption = [captionDict valueForKey:@"text"];
@@ -59,7 +59,7 @@
             cell.textLabel.text = caption;        
         }
     }
-    NSString* imageUrl = [[[thisItem getValueForProperty:@"images"] valueForKey:@"thumbnail"] valueForKey:@"url"];
+    NSString* imageUrl = [[[thisItem valueForKey:@"images"] valueForKey:@"thumbnail"] valueForKey:@"url"];
 
     NSData * d =[NSData dataWithContentsOfURL:[NSURL URLWithString:imageUrl]];
     UIImage* thumb = [UIImage imageWithData:d];
@@ -74,7 +74,7 @@
 {
     //Push the bigger image on selection
     KCSEntityDict* thisItem = [array objectAtIndex:indexPath.row];
-    NSString* imageUrl = [[[thisItem getValueForProperty:@"images"] valueForKey:@"standard_resolution"] valueForKey:@"url"];
+    NSString* imageUrl = [[[thisItem valueForKey:@"images"] valueForKey:@"standard_resolution"] valueForKey:@"url"];
     NSData * d =[NSData dataWithContentsOfURL:[NSURL URLWithString:imageUrl]];
     UIImage* standardImage = [UIImage imageWithData:d];
     

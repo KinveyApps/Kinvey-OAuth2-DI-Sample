@@ -28,6 +28,8 @@
 #import "KCSReachability.h"
 #import "KinveyErrorCodes.h"
 #import "KCSQuery.h"
+#import "KCSUniqueNumber.h"
+#import "KCSStore.h"
 
 #import "KCSStore.h"
 #import "KCSAppdataStore.h"
@@ -36,5 +38,10 @@
 #import "KCSGroup.h"
 #import "KCSReduceFunction.h"
 #import "KCSLinkedAppdataStore.h"
+#import "KCSOfflineSaveStore.h"
+
+//UI & Framework Helpers
+#import "CLLocation+Kinvey.h"
+#import "KinveyKitExtras.h"
 
 #endif

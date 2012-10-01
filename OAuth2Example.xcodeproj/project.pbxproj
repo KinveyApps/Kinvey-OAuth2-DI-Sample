@@ -24,8 +24,10 @@
 		2700501115BDB0EB00A70AD2 /* GTMOAuth2ViewTouch.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2700500C15BDB0EB00A70AD2 /* GTMOAuth2ViewTouch.xib */; };
 		276B5F3E15BDB76000B14C32 /* KinveyKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 276B5F3D15BDB76000B14C32 /* KinveyKit.framework */; };
 		276B5F4115BDB77300B14C32 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 276B5F4015BDB77300B14C32 /* CoreLocation.framework */; };
-		276B5F4315BDB88500B14C32 /* libUAirship-1.2.2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 276B5F4215BDB88500B14C32 /* libUAirship-1.2.2.a */; };
 		276B5F4615BDC9C000B14C32 /* InstatableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 276B5F4515BDC9C000B14C32 /* InstatableViewController.m */; };
+		27FA7807161A38E800B96FDB /* libUAirship-1.3.3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 27FA7806161A38E800B96FDB /* libUAirship-1.3.3.a */; };
+		27FA7809161A38FD00B96FDB /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27FA7808161A38FD00B96FDB /* Accounts.framework */; };
+		27FA780B161A390100B96FDB /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27FA780A161A390100B96FDB /* Twitter.framework */; };
 		29F50912291845479EB0FA2A /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F928EA694CE4F92A9A1B41F /* StoreKit.framework */; };
 		30175D936B9240EA8A19F102 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CA9E8C1FFE744939F8D709B /* CFNetwork.framework */; };
 		57F6A6E1BB8B420BB4C2BECD /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D245B5B60F5846C8BF3D0883 /* CoreTelephony.framework */; };
@@ -62,9 +64,11 @@
 		2700500C15BDB0EB00A70AD2 /* GTMOAuth2ViewTouch.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GTMOAuth2ViewTouch.xib; sourceTree = "<group>"; };
 		276B5F3D15BDB76000B14C32 /* KinveyKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KinveyKit.framework; sourceTree = "<group>"; };
 		276B5F4015BDB77300B14C32 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		276B5F4215BDB88500B14C32 /* libUAirship-1.2.2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libUAirship-1.2.2.a"; sourceTree = "<group>"; };
 		276B5F4415BDC9C000B14C32 /* InstatableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InstatableViewController.h; sourceTree = "<group>"; };
 		276B5F4515BDC9C000B14C32 /* InstatableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InstatableViewController.m; sourceTree = "<group>"; };
+		27FA7806161A38E800B96FDB /* libUAirship-1.3.3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libUAirship-1.3.3.a"; path = "Airship/libUAirship-1.3.3.a"; sourceTree = "<group>"; };
+		27FA7808161A38FD00B96FDB /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		27FA780A161A390100B96FDB /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
 		28F59509882746B2A28F4861 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		32C576A634DF490B9B531F19 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		47844861E147423AA38C536C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -82,6 +86,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27FA780B161A390100B96FDB /* Twitter.framework in Frameworks */,
+				27FA7809161A38FD00B96FDB /* Accounts.framework in Frameworks */,
 				276B5F4115BDB77300B14C32 /* CoreLocation.framework in Frameworks */,
 				27004FDA15BDAFFD00A70AD2 /* UIKit.framework in Frameworks */,
 				27004FDC15BDAFFD00A70AD2 /* Foundation.framework in Frameworks */,
@@ -95,7 +101,7 @@
 				FF384BE7392347B9BE07811B /* libz.dylib in Frameworks */,
 				1ED54BC716FC4ABEAEFA2F80 /* libsqlite3.dylib in Frameworks */,
 				276B5F3E15BDB76000B14C32 /* KinveyKit.framework in Frameworks */,
-				276B5F4315BDB88500B14C32 /* libUAirship-1.2.2.a in Frameworks */,
+				27FA7807161A38E800B96FDB /* libUAirship-1.3.3.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,9 +128,9 @@
 		27004FD815BDAFFD00A70AD2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				276B5F4215BDB88500B14C32 /* libUAirship-1.2.2.a */,
-				276B5F4015BDB77300B14C32 /* CoreLocation.framework */,
+				27FA7806161A38E800B96FDB /* libUAirship-1.3.3.a */,
 				276B5F3D15BDB76000B14C32 /* KinveyKit.framework */,
+				276B5F4015BDB77300B14C32 /* CoreLocation.framework */,
 				27004FD915BDAFFD00A70AD2 /* UIKit.framework */,
 				27004FDB15BDAFFD00A70AD2 /* Foundation.framework */,
 				27004FDD15BDAFFD00A70AD2 /* CoreGraphics.framework */,
@@ -139,6 +145,8 @@
 				D245B5B60F5846C8BF3D0883 /* CoreTelephony.framework */,
 				586FBE8D091C4DE09136841E /* libz.dylib */,
 				BA6C43E6C8F946749824D9C9 /* libsqlite3.dylib */,
+				27FA780A161A390100B96FDB /* Twitter.framework */,
+				27FA7808161A38FD00B96FDB /* Accounts.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -361,6 +369,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/Airship\"",
 				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -384,6 +393,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/Airship\"",
 				);
 				OTHER_LDFLAGS = (
 					"-ObjC",

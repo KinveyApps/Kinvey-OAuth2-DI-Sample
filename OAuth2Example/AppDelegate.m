@@ -18,7 +18,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    (void)[[KCSClient sharedClient] initializeKinveyServiceForAppKey:@"<# Kinvey App Id#>" 
+    (void)[[KCSClient sharedClient] initializeKinveyServiceForAppKey:@"<# Kinvey App Id#>"
                                                        withAppSecret:@"<#Kinvey App Secret#>"
                                                         usingOptions:nil];
     

@@ -16,12 +16,13 @@
 #define kKeychainItemName @"KinveyOAuth2Example: Instagram"
 #define kInstagramID @"<# Instagram App Id #>" //this is set by Instagram when registering an app with the API
 #define kInstagramSecret @"<# Instagram App Secret #>" //this is set by Instagram when registering an app with the API
+#define kInstagramCallbackURI @"<#OAuth2 Callback URI specified in App Setup#>"
 
 @interface ViewController () {
     CLLocationManager* _locationManager;
 }
 
-@property (nonatomic, retain) KCSEntityDict* objectNearestMe;
+@property (nonatomic, retain) NSMutableDictionary* objectNearestMe;
 
 @end
 
@@ -69,17 +70,11 @@
 {
     //This URL is defined by the individual 3rd party APIs, be sure to read their documentation
     NSURL *tokenURL = [NSURL URLWithString:@"https://api.instagram.com/oauth/access_token"];
-    
-    // We'll make up an arbitrary redirectURI.  The controller will watch for
-    // the server to redirect the web view to this URI, but this URI will not be
-    // loaded, so it need not be for any actual web page. This needs to match the URI set as the 
-    // redirect URI when configuring the app with Instagram.
-    NSString *redirectURI = @"https://baas.kinvey.com/oauth-dummy-url-that-shouldnt-work";
-    
+        
     GTMOAuth2Authentication *auth;
     auth = [GTMOAuth2Authentication authenticationWithServiceProvider:@"Instagram"
                                                              tokenURL:tokenURL
-                                                          redirectURI:redirectURI
+                                                          redirectURI:kInstagramCallbackURI
                                                              clientID:kInstagramID
                                                          clientSecret:kInstagramSecret];
     auth.scope = @"basic";
@@ -132,7 +127,7 @@
 
 - (void) getLocationInfo:(NSString*)accessToken
 {
-    KCSCollection* c = [KCSCollection collectionFromString:@"instagram-locations" ofClass:[KCSEntityDict class]];
+    KCSCollection* c = [KCSCollection collectionFromString:@"instagram-locations" ofClass:[NSMutableDictionary class]];
     KCSAppdataStore* store = [KCSAppdataStore storeWithCollection:c options:nil];
     
     CLLocation* loc = [_locationManager location];
@@ -160,9 +155,9 @@
 
 - (void) loadPictures:(NSString*)accessToken
 {
-    KCSCollection* c = [KCSCollection collectionFromString:@"instagram-imagesAtLoc" ofClass:[KCSEntityDict class]];
+    KCSCollection* c = [KCSCollection collectionFromString:@"instagram-imagesAtLoc" ofClass:[NSMutableDictionary class]];
     KCSAppdataStore* store = [KCSAppdataStore storeWithCollection:c options:nil];
-    KCSQuery *q = [KCSQuery queryOnField:@"location_id" withExactMatchForValue:[self.objectNearestMe getValueForProperty:@"id"]];
+    KCSQuery *q = [KCSQuery queryOnField:@"location_id" withExactMatchForValue:[self.objectNearestMe valueForKey:@"id"]];
     [q addQueryOnField:@"oauth_token" withExactMatchForValue:accessToken];
     
     [store queryWithQuery:q withCompletionBlock:^(NSArray *objectsOrNil, NSError *errorOrNil) {
