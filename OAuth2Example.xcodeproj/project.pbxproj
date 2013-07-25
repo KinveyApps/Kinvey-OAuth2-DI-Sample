@@ -22,10 +22,11 @@
 		2700500F15BDB0EB00A70AD2 /* GTMOAuth2SignIn.m in Sources */ = {isa = PBXBuildFile; fileRef = 2700500915BDB0EB00A70AD2 /* GTMOAuth2SignIn.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		2700501015BDB0EB00A70AD2 /* GTMOAuth2ViewControllerTouch.m in Sources */ = {isa = PBXBuildFile; fileRef = 2700500B15BDB0EB00A70AD2 /* GTMOAuth2ViewControllerTouch.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		2700501115BDB0EB00A70AD2 /* GTMOAuth2ViewTouch.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2700500C15BDB0EB00A70AD2 /* GTMOAuth2ViewTouch.xib */; };
-		276B5F3E15BDB76000B14C32 /* KinveyKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 276B5F3D15BDB76000B14C32 /* KinveyKit.framework */; };
 		276B5F4115BDB77300B14C32 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 276B5F4015BDB77300B14C32 /* CoreLocation.framework */; };
 		276B5F4615BDC9C000B14C32 /* InstatableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 276B5F4515BDC9C000B14C32 /* InstatableViewController.m */; };
-		27FA7807161A38E800B96FDB /* libUAirship-1.3.3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 27FA7806161A38E800B96FDB /* libUAirship-1.3.3.a */; };
+		2779D08D17A1744900FA3FE8 /* libUAirship-1.4.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2779D08C17A1744900FA3FE8 /* libUAirship-1.4.0.a */; };
+		2779D08F17A1745100FA3FE8 /* KinveyKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2779D08E17A1745100FA3FE8 /* KinveyKit.framework */; };
+		2779D09117A174E700FA3FE8 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2779D09017A174E700FA3FE8 /* Default-568h@2x.png */; };
 		27FA7809161A38FD00B96FDB /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27FA7808161A38FD00B96FDB /* Accounts.framework */; };
 		27FA780B161A390100B96FDB /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27FA780A161A390100B96FDB /* Twitter.framework */; };
 		29F50912291845479EB0FA2A /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F928EA694CE4F92A9A1B41F /* StoreKit.framework */; };
@@ -62,11 +63,12 @@
 		2700500A15BDB0EB00A70AD2 /* GTMOAuth2ViewControllerTouch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMOAuth2ViewControllerTouch.h; sourceTree = "<group>"; };
 		2700500B15BDB0EB00A70AD2 /* GTMOAuth2ViewControllerTouch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMOAuth2ViewControllerTouch.m; sourceTree = "<group>"; };
 		2700500C15BDB0EB00A70AD2 /* GTMOAuth2ViewTouch.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GTMOAuth2ViewTouch.xib; sourceTree = "<group>"; };
-		276B5F3D15BDB76000B14C32 /* KinveyKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KinveyKit.framework; sourceTree = "<group>"; };
 		276B5F4015BDB77300B14C32 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		276B5F4415BDC9C000B14C32 /* InstatableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InstatableViewController.h; sourceTree = "<group>"; };
 		276B5F4515BDC9C000B14C32 /* InstatableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InstatableViewController.m; sourceTree = "<group>"; };
-		27FA7806161A38E800B96FDB /* libUAirship-1.3.3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libUAirship-1.3.3.a"; path = "Airship/libUAirship-1.3.3.a"; sourceTree = "<group>"; };
+		2779D08C17A1744900FA3FE8 /* libUAirship-1.4.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libUAirship-1.4.0.a"; path = "Airship/libUAirship-1.4.0.a"; sourceTree = "<group>"; };
+		2779D08E17A1745100FA3FE8 /* KinveyKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KinveyKit.framework; path = Kinvey/KinveyKit.framework; sourceTree = "<group>"; };
+		2779D09017A174E700FA3FE8 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		27FA7808161A38FD00B96FDB /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		27FA780A161A390100B96FDB /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
 		28F59509882746B2A28F4861 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
@@ -99,9 +101,9 @@
 				29F50912291845479EB0FA2A /* StoreKit.framework in Frameworks */,
 				57F6A6E1BB8B420BB4C2BECD /* CoreTelephony.framework in Frameworks */,
 				FF384BE7392347B9BE07811B /* libz.dylib in Frameworks */,
+				2779D08F17A1745100FA3FE8 /* KinveyKit.framework in Frameworks */,
+				2779D08D17A1744900FA3FE8 /* libUAirship-1.4.0.a in Frameworks */,
 				1ED54BC716FC4ABEAEFA2F80 /* libsqlite3.dylib in Frameworks */,
-				276B5F3E15BDB76000B14C32 /* KinveyKit.framework in Frameworks */,
-				27FA7807161A38E800B96FDB /* libUAirship-1.3.3.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,6 +113,7 @@
 		27004FCA15BDAFFD00A70AD2 = {
 			isa = PBXGroup;
 			children = (
+				2779D09017A174E700FA3FE8 /* Default-568h@2x.png */,
 				27004FDF15BDAFFD00A70AD2 /* OAuth2Example */,
 				27004FD815BDAFFD00A70AD2 /* Frameworks */,
 				27004FD615BDAFFD00A70AD2 /* Products */,
@@ -128,8 +131,8 @@
 		27004FD815BDAFFD00A70AD2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				27FA7806161A38E800B96FDB /* libUAirship-1.3.3.a */,
-				276B5F3D15BDB76000B14C32 /* KinveyKit.framework */,
+				2779D08E17A1745100FA3FE8 /* KinveyKit.framework */,
+				2779D08C17A1744900FA3FE8 /* libUAirship-1.4.0.a */,
 				276B5F4015BDB77300B14C32 /* CoreLocation.framework */,
 				27004FD915BDAFFD00A70AD2 /* UIKit.framework */,
 				27004FDB15BDAFFD00A70AD2 /* Foundation.framework */,
@@ -249,6 +252,7 @@
 				27004FE415BDAFFD00A70AD2 /* InfoPlist.strings in Resources */,
 				27004FF015BDAFFD00A70AD2 /* ViewController_iPhone.xib in Resources */,
 				27004FF315BDAFFD00A70AD2 /* ViewController_iPad.xib in Resources */,
+				2779D09117A174E700FA3FE8 /* Default-568h@2x.png in Resources */,
 				2700501115BDB0EB00A70AD2 /* GTMOAuth2ViewTouch.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -361,7 +365,8 @@
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)\"",
+					"$(SRCROOT)",
+					"$(SRCROOT)/Kinvey",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OAuth2Example/OAuth2Example-Prefix.pch";
@@ -385,7 +390,8 @@
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)\"",
+					"$(SRCROOT)",
+					"$(SRCROOT)/Kinvey",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OAuth2Example/OAuth2Example-Prefix.pch";
